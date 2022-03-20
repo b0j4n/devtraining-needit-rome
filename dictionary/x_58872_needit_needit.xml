@@ -4,13 +4,9 @@
         <element attributes="encode_utf8=false" label="Requested For" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request Type" mandatory="true" max_length="40" name="u_request_type" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Human Resources" sequence="0" value="hr"/>
-                <element inactive_on_update="false" label="Facilities" sequence="1" value="facilities"/>
-                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
-                <element inactive_on_update="false" label="Information services" sequence="3" value="is"/>
-                <element inactive_on_update="false" label="Facilities" sequence="10" value="facilities"/>
-                <element inactive_on_update="false" label="Human Resources" sequence="20" value="human_resources"/>
-                <element inactive_on_update="false" label="Legal" sequence="30" value="legal"/>
+                <element inactive="true" inactive_on_update="true" label="Human Resources" sequence="10" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Facilities" sequence="20" value="facilities"/>
+                <element inactive="true" inactive_on_update="true" label="Legal" sequence="30" value="legal"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
